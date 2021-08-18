@@ -25,7 +25,9 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "cherry-pick-all": "./tools/cherry-pick-all.sh",
-    "migrate-all": "./tools/migrate-all.sh"
+    "migrate-all": "./tools/migrate-all.sh",
+    "postinstall": "husky install",
+    "pre-commit": "run run nx workspace-generator update-scope-schema"
   },
   "private": true,
   "dependencies": {
